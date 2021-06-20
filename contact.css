@@ -1,0 +1,39 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact a {
+  color: var(--icon-final);
+  transition: all 200ms ease;
+  cursor: pointer;
+}
+.contact li {
+  --icon-final: var(--text-primary);
+}
+.contact li:hover {
+  --icon-final: var(--icon-color);
+}
+
+.contact ul li {
+  display: inline-block;
+  margin: 25px 2.5vh;
+  width: 5vh;
+  height: 5vh;
+  content: "";
+  text-align: center;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 100px;
+  box-shadow: 0px 10px 10px #000;
+  transition: all 200ms ease;
+}
+
+.contact i {
+  line-height: 5vh;
+}
+
+.contact ul li:hover {
+  transform: translateY(-10px);
+}

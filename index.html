@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HawDevelopment Portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/9be818e051.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Imports -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="card.css" />
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+
+  <body>
+    <!--Main-->
+    <main>
+      <img
+        src="/images/Banner.png"
+        alt=""
+        style="width: 30%; padding: 1rem; top: 0%; position: static"
+      />
+      <!--About-->
+      <h2 id="About">About Me</h2>
+      <p
+        style="
+          width: calc(min-content + 100px);
+          min-width: calc(min-content - 100px);
+          height: calc(min-content + 100px);
+        "
+        class="about-text"
+      >
+        Hi, I'm HawDevelopment. I'm a Roblox programmer and game dev enthusiast.
+        I like everything about computers and their history. I've been
+        developing for over 5. years, 1 of them being on Roblox. I mostly make
+        small projects and games, although some tend to get a fair bit bigger
+        than expected. I like making never seen before projects on Roblox, as
+        it's challenging and fun.
+      </p>
+      <!--Projects-->
+      <h2 id="Projects">Projects</h2>
+      <section class="card-list">
+        <!--Roblox Engine-->
+        <article class="card">
+          <header class="header">
+            <h2>Roblox Engine</h2>
+            <p class="card-date">June 18 2021</p>
+          </header>
+          <img
+            src="/images/RobloxEngine.jpeg"
+            alt="RobloxEngine"
+            style="width: 400px; height: 400px"
+          />
+          <br />
+          <p>
+            Small little render engine, made entirely from scratch. It can
+            project any 3d point onto a 2d surface. It supports depth buffer,
+            clipping, rotation, pitch, and yaw.
+          </p>
+          <i class="fab fa-github">
+            <a href="https://github.com/HawDevelopment/Roblox-Engine"
+              >Github</a
+            ></i
+          >
+          <a
+            class="roblox"
+            href="https://www.roblox.com/games/6979179809/Roblox-Engine"
+            >Game</a
+          >
+        </article>
+        <!--Platformer-->
+        <article class="card">
+          <header class="header">
+            <h2>2.5D Platformer</h2>
+            <p class="card-date">January 24 2021</p>
+          </header>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/OP6uCTLJkkM"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <br />
+          <p>
+            My little platformer, with camera bounds, room loading, and play
+            controller. Although not long, it's sweet and satisfying.
+          </p>
+          <a
+            class="roblox"
+            href="https://www.roblox.com/games/6292060709/2-5-Platformer"
+            >Game</a
+          >
+          <a
+            class="studio"
+            href="https://devforum.roblox.com/t/2-5d-platformer/1019014"
+            >Devforum</a
+          >
+        </article>
+        <!--Marching Squares-->
+        <article class="card">
+          <header class="header">
+            <h2>Marching Cubes</h2>
+            <p class="card-date">December 17 2020</p>
+          </header>
+          <img
+            class="card-image"
+            src="/images/MarchingCubes.png"
+            alt="MarchingCubes"
+            style="width: 496px; height: 326px"
+          />
+          <br />
+          <p>
+            Marching Cubes allows you to triangulate 3d voxel terrain. So
+            instead of getting Minecraft-like terrain, you can get smooth curves
+            instead.
+          </p>
+          <a
+            class="roblox"
+            href="https://www.roblox.com/games/6098882178/Marching-Cubes"
+            >Game</a
+          >
+          <a
+            class="studio"
+            href="https://devforum.roblox.com/t/marching-cubes-procedural-terrain-generation/929695"
+            >Devforum</a
+          >
+        </article>
+        <!--Sphere Tracer-->
+        <article class="card">
+          <header class="header">
+            <h2>Sphere Tracing</h2>
+            <p class="card-date">December 8 2020</p>
+          </header>
+          <img
+            class="card-image"
+            src="/images/RayMarcher.png"
+            alt="RayMarcher"
+            style="width: 536px; height: 303px"
+          />
+          <br />
+          <p>
+            Instead of using expensive intersection functions, you can use
+            signed distance functions. Raymarching can be extremely fast and
+            detailed when rendering small amounts of objects.
+          </p>
+          <a
+            class="roblox"
+            href="https://www.roblox.com/games/6056203517/Sphere-Tracing"
+            >Game</a
+          >
+          <a
+            class="studio"
+            href="https://devforum.roblox.com/t/ray-marching-sphere-tracing-render-engine-inside-roblox/918530"
+            >Devforum</a
+          >
+        </article>
+        <!--Marching Squares-->
+        <article class="card">
+          <header class="header">
+            <h2>Marching Squares</h2>
+            <p class="card-date">October 26 2020</p>
+          </header>
+          <img
+            class="card-image"
+            src="/images/MarchingSquares.png"
+            alt="MarchingCubes"
+            style="width: 439px; height: 434px"
+          />
+          <br />
+          <p>
+            Marching Squares allows you to triangulate 2d voxel terrain. So
+            instead of getting Blocky bits and bumps, you can get smooth curves
+            and walls.
+          </p>
+          <a
+            class="roblox"
+            href="https://www.roblox.com/games/5880893194/Marching-Squares"
+            >Game</a
+          >
+          <a
+            class="studio"
+            href="https://devforum.roblox.com/t/marching-squares-procedural-cave-generation/840312"
+            >Devforum</a
+          >
+        </article>
+      </section>
+      <!--News-->
+      <h2 id="News">News</h2>
+      <section class="card-list">
+        <article class="card">
+          <header class="header">
+            <h2>Render Engine Done</h2>
+            <p class="card-date">June 18 2021</p>
+          </header>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/6DsXxU1p738"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <br />
+          <p>
+            So I'm now finished with the render engine, took a while. Now that
+            I'm done I can finally focus on making something else.
+          </p>
+        </article>
+      </section>
+      <!--Contact-->
+      <h2 id="Contact">Contact</h2>
+      <div class="contact">
+        <ul>
+          <li style="--icon-color: #ff0000">
+            <a href="https://www.youtube.com/channel/UCoQ1fZu3-bcuqZLVrSYNVWA"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </li>
+          <li style="--icon-color: #009efe">
+            <a href="https://www.roblox.com/users/1640376586/profile"
+              ><i
+                style="background-clip: var(--icon-final)"
+                class="fab roblox"
+              ></i
+            ></a>
+          </li>
+          <li style="--icon-color: #1da1f2">
+            <a href="https://twitter.com/HawDevelopment"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li style="--icon-color: #ff5700">
+            <a href="https://www.reddit.com/user/HawDevelopment"
+              ><i class="fab fa-reddit"></i
+            ></a>
+          </li>
+          <li style="--icon-color: #7289d9">
+            <a><i class="fab fa-discord"></i></a>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>
