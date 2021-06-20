@@ -4,7 +4,6 @@
   display: flex;
   padding: 3rem;
   overflow-x: scroll;
-  overflow: scroll;
 }
 
 .card-list::-webkit-scrollbar {
@@ -23,7 +22,7 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  overflow-y: auto;
+  overflow-y: scroll;
 
   height: 500px;
   width: min-content;
