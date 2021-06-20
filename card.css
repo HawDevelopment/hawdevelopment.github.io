@@ -8,6 +8,7 @@
 
 .card-list::-webkit-scrollbar {
   height: 0.5rem;
+  width: 0.5;
 }
 
 .card-list::-webkit-scrollbar-track {
@@ -16,6 +17,10 @@
 
 .card-list::-webkit-scrollbar-thumb {
   background: var(--text-secondary);
+}
+
+.card::-webkit-scrollbar-corner {
+  background: none;
 }
 
 .card {
@@ -38,10 +43,15 @@
 
 .card::-webkit-scrollbar {
   width: 0.5rem;
+  height: 0.5rem;
 }
 
 .card::-webkit-scrollbar-track {
   background: var(--bg-primary);
+}
+
+.card::-webkit-scrollbar-corner {
+  background: none;
 }
 
 .card::-webkit-scrollbar-thumb {
