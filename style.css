@@ -1,11 +1,6 @@
-@font-face {
-  font-family: "Jetbrains Mono";
-  src: url("/JetBrainsMono-Regular.ttf");
-}
-
 :root {
   font-size: 20px;
-  font-family: "Jetbrains Mono";
+  font-family: Jetbrains Mono;
   --text-primary: #fff;
   --text-secondary: #019d76;
   --bg-primary: #111519;
