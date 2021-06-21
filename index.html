@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/9be818e051.js"
       crossorigin="anonymous"
     ></script>
+    <script src="/index.js" defer></script>
 
     <!-- Imports -->
     <link rel="stylesheet" href="style.css" />
@@ -226,9 +227,17 @@
           </li>
           <li style="--icon-color: #009efe">
             <a href="https://www.roblox.com/users/1640376586/profile"
-              ><i
-                style="background-clip: var(--icon-final)"
+              ><i id = "roblox-icon"
+                style="--icon-path: url(/images/RobloxIcon.png)"
                 class="fab roblox"
+              ></i
+            ></a>
+          </li>
+          <li style="--icon-color: #009efe">
+            <a href="https://www.roblox.com/users/1640376586/profile"
+              ><i id = "roblox-icon"
+                style="--icon-path: url(/images/RobloxIcon.png)"
+                class="fab studio"
               ></i
             ></a>
           </li>
@@ -242,8 +251,8 @@
               ><i class="fab fa-reddit"></i
             ></a>
           </li>
-          <li style="--icon-color: #7289d9">
-            <a><i class="fab fa-discord"></i></a>
+          <li style="--icon-color: #7289d9" id ="discord-link">
+            <a ><i class="fab fa-discord"></i></a>
           </li>
         </ul>
       </div>

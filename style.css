@@ -13,6 +13,7 @@
   --abstract-primary: #60778c;
   --abstract-secondary: #232b33;
   --fa-transition: 100ms;
+  --icon-final: white;
 }
 
 body {
@@ -65,6 +66,7 @@ iframe {
 .roblox::before {
   background: url(/images/RobloxIcon.png);
   background-size: 100%;
+  color: var(--icon-final);
   position: relative;
   top: 3px;
   width: 1.1rem;
@@ -74,15 +76,23 @@ iframe {
 }
 
 .studio::before {
+  content: "";
   background: url(/images/RobloxStudio.png);
   background-size: 100%;
+  background-color:transparent;
+  color:var(--icon-final);
   position: relative;
   top: 3px;
   width: 1.1rem;
   height: 1.1rem;
   display: inline-block;
-  content: "";
 }
+
+.copied {
+  --icon-final: #2452f8 !important;
+  transform: translateY(1px) !important;
+}
+
 
 /* Small Screen */
 @media screen and (max-width: 600px) {
