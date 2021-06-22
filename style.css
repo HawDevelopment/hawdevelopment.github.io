@@ -74,8 +74,7 @@ iframe {
   content: "";
   background: url(/images/RobloxStudio.png);
   background-size: 100%;
-  background-color:transparent;
-  color:var(--icon-final);
+  background-color: var(--icon-final);
   position: relative;
   top: 3px;
   width: 1.1rem;
@@ -84,10 +83,8 @@ iframe {
 }
 
 .copied {
-  --icon-final: #2452f8 !important;
   transform: translateY(1px) !important;
 }
-
 
 /* Small Screen */
 @media screen and (max-width: 600px) {
