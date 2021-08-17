@@ -27,7 +27,7 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  overflow-y: scroll;
+  overflow-y: auto;
 
   height: 500px;
   width: min-content;
@@ -39,6 +39,11 @@
   box-shadow: -1rem 0 1.5rem #000;
 
   transition: 0.2s ease;
+}
+
+.card img {
+  max-width: 100%;
+  max-height: auto;
 }
 
 .card::-webkit-scrollbar {

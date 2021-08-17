@@ -74,7 +74,7 @@ iframe {
   content: "";
   background: url(/images/RobloxStudio.png);
   background-size: 100%;
-  background-color: var(--icon-final);
+  /* background-color: var(--icon-final); */
   position: relative;
   top: 3px;
   width: 1.1rem;
