@@ -1,42 +1,42 @@
 .contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-  --scale: max(5vh, 2.1rem);
+	--scale: max(5vh, 2.1rem);
 }
 
 .contact a {
-  filter: var(--icon-final);
-  cursor: pointer;
-  color: white;
+	filter: var(--icon-final);
+	cursor: pointer;
+	color: white;
 }
 .contact li {
-  --icon-final: none;
+	--icon-final: none;
 }
 .contact li:hover {
-  --icon-final: var(--icon-color);
+	--icon-final: var(--icon-color);
 }
 
 .contact ul li {
-  display: inline-block;
-  margin: 1rem 2.5vh;
-  width: var(--scale);
-  height: var(--scale);
+	display: inline-block;
+	margin: 1rem 2.5vh;
+	width: var(--scale);
+	height: var(--scale);
 
-  content: "";
-  text-align: center;
-  display: inline-block;
-  overflow: hidden;
-  border-radius: 100px;
-  box-shadow: 0px 10px 10px #000;
-  transition: transform 200ms ease;
+	content: "";
+	text-align: center;
+	display: inline-block;
+	overflow: hidden;
+	border-radius: 100px;
+	box-shadow: 0px 10px 10px #000;
+	transition: transform 200ms ease;
 }
 
 .contact i {
-  line-height: var(--scale);
+	line-height: var(--scale);
 }
 
 .contact ul li:hover {
-  transform: translateY(-10px);
+	transform: translateY(-10px);
 }

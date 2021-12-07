@@ -1,350 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HawDevelopment Portfolio</title>
-    <script
-      src="https://kit.fontawesome.com/9be818e051.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="/index.js" defer></script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HawDevelopment Portfolio</title>
+		<script src="https://kit.fontawesome.com/9be818e051.js" crossorigin="anonymous"></script>
+		<script src="/index.js" defer></script>
 
-    <!-- Imports -->
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="/card.css" />
-    <link rel="stylesheet" href="/contact.css" />
+		<!-- Imports -->
+		<link rel="stylesheet" href="/style.css" />
+		<link rel="stylesheet" href="/card.css" />
+		<link rel="stylesheet" href="/contact.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Inter:300,400,400i,700%7CJetBrains+Mono&display=fallback"
-    />
-    <style>
-      :root {
-        --md-text-font-family: "Inter";
-        --md-code-font-family: "JetBrains Mono";
-      }
-    </style>
-  </head>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,400i,700%7CJetBrains+Mono&display=fallback" />
+		<style>
+			:root {
+				--md-text-font-family: "Inter";
+				--md-code-font-family: "JetBrains Mono";
+			}
+		</style>
+	</head>
 
-  <body>
-    <!--Main-->
-    <main>
-      <img
-        src="/images/Banner.png"
-        alt=""
-        style="
-          display: block;
-          max-width:30%;
-          max-height:200;
-          width: auto;
-          height: auto;
-          padding: 1rem;
-          top: 0%;
-          position: static;
-          filter: contrast(95%);
-        "
-      />
-      <!--About-->
-      <h2 id="About">About Me</h2>
-      <p
-        style="
-          width: calc(min-content + 100px);
-          min-width: calc(min-content - 100px);
-          height: calc(min-content + 100px);
-        "
-        class="about-text"
-      >
-        Hi, I'm HawDevelopment. I'm a Roblox programmer and game dev enthusiast.
-        I like everything about computers and their history. I've been
-        developing for over 5. years, 1 of them being on Roblox. I mostly make
-        small projects and games, although some tend to get a fair bit bigger
-        than expected. I like making never been seen before projects.
-      </p>
-      <!--Projects-->
-      <h2 id="Projects">Projects</h2>
-      <section class="card-list">
-        <!--Roblox Engine-->
-        <article class="card">
-          <header class="header">
-            <h2>Roblox Engine</h2>
-            <p class="card-date">June 18 2021</p>
-          </header>
-          <img
-            src="/images/RobloxEngine.jpeg"
-            alt="RobloxEngine"
-            style="width: 400px; height: 400px"
-          />
-          <br />
-          <p>
-            Small little render engine, made entirely from scratch. It can
-            project any 3d point onto a 2d surface. It supports depth buffer,
-            clipping, rotation, pitch, and yaw.
-          </p>
-          <i class="fab fa-github">
-            <a href="https://github.com/HawDevelopment/Roblox-Engine"
-              >Github</a
-            ></i
-          >
-          <a
-            class="roblox"
-            href="https://www.roblox.com/games/6979179809/Roblox-Engine"
-            >Game</a
-          >
-        </article>
-        <!--Platformer-->
-        <article class="card">
-          <header class="header">
-            <h2>2.5D Platformer</h2>
-            <p class="card-date">January 24 2021</p>
-          </header>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/OP6uCTLJkkM"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-          <br />
-          <p>
-            My little platformer, with camera bounds, room loading, and play
-            controller. Although not long, it's sweet and satisfying.
-          </p>
-          <a
-            class="roblox"
-            href="https://www.roblox.com/games/6292060709/2-5-Platformer"
-            >Game</a
-          >
-          <a
-            class="studio"
-            href="https://devforum.roblox.com/t/2-5d-platformer/1019014"
-            >Devforum</a
-          >
-        </article>
-        <!--Marching Squares-->
-        <article class="card">
-          <header class="header">
-            <h2>Marching Cubes</h2>
-            <p class="card-date">December 17 2020</p>
-          </header>
-          <img
-            class="card-image"
-            src="/images/MarchingCubes.png"
-            alt="MarchingCubes"
-            style="width: 496px; height: 326px"
-          />
-          <br />
-          <p>
-            Marching Cubes allows you to triangulate 3d voxel terrain. So
-            instead of getting Minecraft-like terrain, you can get smooth curves
-            instead.
-          </p>
-          <a
-            class="roblox"
-            href="https://www.roblox.com/games/6098882178/Marching-Cubes"
-            >Game</a
-          >
-          <a
-            class="studio"
-            href="https://devforum.roblox.com/t/marching-cubes-procedural-terrain-generation/929695"
-            >Devforum</a
-          >
-        </article>
-        <!--Sphere Tracer-->
-        <article class="card">
-          <header class="header">
-            <h2>Sphere Tracing</h2>
-            <p class="card-date">December 8 2020</p>
-          </header>
-          <img
-            class="card-image"
-            src="/images/RayMarcher.png"
-            alt="RayMarcher"
-            style="width: 536px; height: 303px"
-          />
-          <br />
-          <p>
-            Instead of using expensive intersection functions, you can use
-            signed distance functions. Raymarching can be extremely fast and
-            detailed when rendering small amounts of objects.
-          </p>
-          <a
-            class="roblox"
-            href="https://www.roblox.com/games/6056203517/Sphere-Tracing"
-            >Game</a
-          >
-          <a
-            class="studio"
-            href="https://devforum.roblox.com/t/ray-marching-sphere-tracing-render-engine-inside-roblox/918530"
-            >Devforum</a
-          >
-        </article>
-        <!--Marching Squares-->
-        <article class="card">
-          <header class="header">
-            <h2>Marching Squares</h2>
-            <p class="card-date">October 26 2020</p>
-          </header>
-          <img
-            class="card-image"
-            src="/images/MarchingSquares.png"
-            alt="MarchingCubes"
-            style="width: 439px; height: 434px"
-          />
-          <br />
-          <p>
-            Marching Squares allows you to triangulate 2d voxel terrain. So
-            instead of getting Blocky bits and bumps, you can get smooth curves
-            and walls.
-          </p>
-          <a
-            class="roblox"
-            href="https://www.roblox.com/games/5880893194/Marching-Squares"
-            >Game</a
-          >
-          <a
-            class="studio"
-            href="https://devforum.roblox.com/t/marching-squares-procedural-cave-generation/840312"
-            >Devforum</a
-          >
-        </article>
-      </section>
-      <!--Modules-->
-      <h2 id="Modules">Modules</h2>
-      <section class="card-list">
-        <!--Ro-Lib-->
-        <article class="card">
-          <header class="header">
-            <h2>Ro-Lib</h2>
-            <p class="card-date">June 10 2021</p>
-          </header>
-          <br />
-          <p>
-            Ro-Lib is a module that helps and encourages developers to use streamline design patterns in their code.
-            It has all the things you need to make better and more performant games. Its easy to use and provides a simple syntax.
-          </p>
-          <i class="fab fa-github">
-            <a href="https://github.com/HawDevelopment/Ro-Lib">Github</a></i
-          >
-        </article>
-        <!--Ro-Express-->
-        <article class="card">
-          <header class="header">
-            <h2>Ro-Express</h2>
-            <p class="card-date">June 10 2021</p>
-          </header>
-          <br />
-          <p>
-            Ro-Express is a Networking module based on express-js. It makes
-            creating Remotes easier while implementing lots of useful features.
-            Its best used for Big and Complex games, when it can be hard to keep
-            track of things. And it works really well with Git and Rojo.
-          </p>
-          <i class="fab fa-github">
-            <a href="https://github.com/HawDevelopment/Ro-Express">Github</a></i
-          >
-        </article>
-      </section>
-      <!--Plugins-->
-      <h2 id="Plugins">Plugins</h2>
-      <section class="card-list">
-        <!--ReParent-->
-        <article class="card">
-          <header class="header">
-            <h2>ReParent</h2>
-            <p class="card-date">July 30 2021</p>
-          </header>
-          <br />
-          <p>
-            ReParent is a plugin that allows you to set two diffrent parents for an object, helpful for builders and modelers.
-            Made in collaboration with <a href="https://twitter.com/MrChickenRocket/">MrChickenRocket</a>.
-          </p>
-          <i class="fab fa-github">
-            <a href="https://github.com/HawDevelopment/ReParent">Github</a></i
-          >
-          <a
-            class="roblox"
-            href="https://www.roblox.com/library/7176164814/ReParent"
-            >Plugin</a
-          >
-        </article>
-      </section>
-      <!--Contact-->
-      <h2 id="Contact">Contact</h2>
-      <div class="contact">
-        <ul>
-          <li
-            style="
-              --icon-color: invert(35%) sepia(95%) saturate(7470%)
-                hue-rotate(356deg) brightness(91%) contrast(123%);
-            "
-          >
-            <a href="https://www.youtube.com/channel/UCoQ1fZu3-bcuqZLVrSYNVWA"
-              ><i class="fab fa-youtube"></i
-            ></a>
-          </li>
-          <li
-            style="
-              --icon-color: invert(35%) sepia(95%) saturate(7470%)
-                hue-rotate(356deg) brightness(91%) contrast(123%);
-            "
-          >
-            <a href="https://www.roblox.com/users/1640376586/profile"
-              ><i
-                id="roblox-icon"
-                style="--icon-path: url(/images/RobloxIcon.png)"
-                class="fab roblox"
-              ></i
-            ></a>
-          </li>
-          <li
-            style="
-              --icon-color: invert(62%) sepia(54%) saturate(6376%)
-                hue-rotate(177deg) brightness(99%) contrast(106%);
-            "
-          >
-            <a href="https://www.roblox.com/users/1640376586/profile"
-              ><i
-                id="roblox-icon"
-                style="--icon-path: url(/images/RobloxStudio.png)"
-                class="fab studio"
-              ></i
-            ></a>
-          </li>
-          <li
-            style="
-              --icon-color: invert(61%) sepia(28%) saturate(7496%)
-                hue-rotate(176deg) brightness(97%) contrast(95%);
-            "
-          >
-            <a href="https://twitter.com/HawDevelopment"
-              ><i class="fab fa-twitter"></i
-            ></a>
-          </li>
-          <li
-            style="
-              --icon-color: invert(56%) sepia(53%) saturate(7347%)
-                hue-rotate(360deg) brightness(101%) contrast(108%);
-            "
-          >
-            <a href="https://www.reddit.com/user/HawDevelopment"
-              ><i class="fab fa-reddit"></i
-            ></a>
-          </li>
-          <li
-            style="
-              --icon-color: invert(51%) sepia(30%) saturate(769%)
-                hue-rotate(189deg) brightness(100%) contrast(87%);
-            "
-            id="discord-link"
-          >
-            <a><i class="fab fa-discord"></i></a>
-          </li>
-        </ul>
-      </div>
-    </main>
-  </body>
+	<body>
+		<!--Main-->
+		<main>
+			<!--About-->
+			<h2 id="About">About Me</h2>
+			<p style="width: calc(min-content + 50px); min-width: calc(min-content - 50px); height: calc(min-content + 50px)" class="about-text">
+				Hi, I'm HawDevelopment. I'm a programmer and game dev. Love working with math and computers. I mostly make small projects and games,
+				although some tend to get a fair bit bigger than expected. I like making 'never been seen before' projects. I also make libraries and
+				tools for development.
+			</p>
+			<!--Projects-->
+			<h2 id="Projects">Projects</h2>
+			<section class="card-list">
+				<!--Marching Cubes-->
+				<article class="card">
+					<header class="header">
+						<h2>Marching Cubes</h2>
+						<p class="card-date">December 3 2021</p>
+					</header>
+					<iframe
+						width="560"
+						height="315"
+						src="https://www.youtube.com/embed/j-6hyL-8GYY"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen
+					></iframe>
+					<br />
+					<p>I remade my old implementation of Marching Cubes. It runs alot smoother and is more embeddaable.</p>
+					<i class="fab fa-github"> <a href="https://github.com/HawDevelopment/MarchingCubesRBX">Github</a></i>
+					<a class="roblox" href="https://www.roblox.com/games/8150765359/Marching-Cubes">Game</a>
+				</article>
+				<!--Chaos Equation-->
+				<article class="card">
+					<header class="header">
+						<h2>Chaos Equation</h2>
+						<p class="card-date">November 28 2021</p>
+					</header>
+					<iframe
+						width="560"
+						height="315"
+						src="https://www.youtube.com/embed/tAugyTUftZs?&mute=1"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen
+					></iframe>
+					<br />
+					<p>
+						A small demo of <a href="https://github.com/HawDevelopment/River">River</a>. It runs super smooth with only Roblox rendering
+						and updating pipline limiting the number of objects.
+					</p>
+					<i class="fab fa-github"> <a href="https://github.com/HawDevelopment/ChaosRBX">Github</a></i>
+					<a class="roblox" href="https://www.roblox.com/games/8123085895/Chaos-Equation">Game</a>
+				</article>
+				<!--Roblox Engine-->
+				<article class="card">
+					<header class="header">
+						<h2>Roblox Engine</h2>
+						<p class="card-date">June 18 2021</p>
+					</header>
+					<img src="/images/RobloxEngine.jpeg" alt="RobloxEngine" style="max-width: 400px; max-height: 400px" />
+					<br />
+					<p>
+						Small little render engine, made entirely from scratch. It can project any 3d point onto a 2d surface. It supports depth
+						buffer, clipping, rotation, pitch, and yaw.
+					</p>
+					<i class="fab fa-github"> <a href="https://github.com/HawDevelopment/Roblox-Engine">Github</a></i>
+					<a class="roblox" href="https://www.roblox.com/games/6979179809/Roblox-Engine">Game</a>
+				</article>
+				<!--Platformer-->
+				<article class="card">
+					<header class="header">
+						<h2>2.5D Platformer</h2>
+						<p class="card-date">January 24 2021</p>
+					</header>
+					<iframe
+						width="560"
+						height="315"
+						src="https://www.youtube.com/embed/OP6uCTLJkkM"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen
+					></iframe>
+					<br />
+					<p>My little platformer, with camera bounds, room loading, and play controller. Although not long, it's sweet and satisfying.</p>
+					<a class="roblox" href="https://www.roblox.com/games/6292060709/2-5-Platformer">Game</a>
+					<a class="studio" href="https://devforum.roblox.com/t/2-5d-platformer/1019014">Devforum</a>
+				</article>
+				<!--Marching Squares-->
+				<article class="card">
+					<header class="header">
+						<h2>Marching Cubes</h2>
+						<p class="card-date">December 17 2020</p>
+					</header>
+					<img class="card-image" src="/images/MarchingCubes.png" alt="MarchingCubes" style="width: 496px; height: 326px" />
+					<br />
+					<p>
+						Marching Cubes allows you to triangulate 3d voxel terrain. So instead of getting Minecraft-like terrain, you can get smooth
+						curves instead.
+					</p>
+					<a class="roblox" href="https://www.roblox.com/games/6098882178/Marching-Cubes">Game</a>
+					<a class="studio" href="https://devforum.roblox.com/t/marching-cubes-procedural-terrain-generation/929695">Devforum</a>
+				</article>
+				<!--Sphere Tracer-->
+				<article class="card">
+					<header class="header">
+						<h2>Sphere Tracing</h2>
+						<p class="card-date">December 8 2020</p>
+					</header>
+					<img class="card-image" src="/images/RayMarcher.png" alt="RayMarcher" style="width: 536px; height: 303px" />
+					<br />
+					<p>
+						Instead of using expensive intersection functions, you can use signed distance functions. Raymarching can be extremely fast
+						and detailed when rendering small amounts of objects.
+					</p>
+					<a class="roblox" href="https://www.roblox.com/games/6056203517/Sphere-Tracing">Game</a>
+					<a class="studio" href="https://devforum.roblox.com/t/ray-marching-sphere-tracing-render-engine-inside-roblox/918530">Devforum</a>
+				</article>
+				<!--Marching Squares-->
+				<article class="card">
+					<header class="header">
+						<h2>Marching Squares</h2>
+						<p class="card-date">October 26 2020</p>
+					</header>
+					<img class="card-image" src="/images/MarchingSquares.png" alt="MarchingCubes" style="width: 439px; height: 434px" />
+					<br />
+					<p>
+						Marching Squares allows you to triangulate 2d voxel terrain. So instead of getting Blocky bits and bumps, you can get smooth
+						curves and walls.
+					</p>
+					<a class="roblox" href="https://www.roblox.com/games/5880893194/Marching-Squares">Game</a>
+					<a class="studio" href="https://devforum.roblox.com/t/marching-squares-procedural-cave-generation/840312">Devforum</a>
+				</article>
+			</section>
+			<!--Modules-->
+			<h2 id="Modules">Modules</h2>
+			<section class="card-list">
+				<!--River-->
+				<article class="card">
+					<header class="header">
+						<h2>River</h2>
+						<p class="card-date">November 27 2021</p>
+					</header>
+					<br />
+					<p>
+						River is a fast and simple ECS made specifically with data in mind. Make your games faster and easier to manage. It has a
+						simple syntax and lets you use Luau type system. River gets your data right when you want it.
+					</p>
+					<i class="fab fa-github"> <a href="https://github.com/HawDevelopment/River">Github</a></i>
+				</article>
+
+				<!--Ro-Lib-->
+				<article class="card">
+					<header class="header">
+						<h2>Ro-Lib</h2>
+						<p class="card-date">June 10 2021</p>
+					</header>
+					<br />
+					<p>
+						Ro-Lib is a module that helps and encourages developers to use streamline design patterns in their code. It has all the things
+						you need to make better and more performant games. Its easy to use and provides a simple syntax.
+					</p>
+					<i class="fab fa-github"> <a href="https://github.com/HawDevelopment/Ro-Lib">Github</a></i>
+				</article>
+				<!--Ro-Express-->
+				<article class="card">
+					<header class="header">
+						<h2>Ro-Express</h2>
+						<p class="card-date">June 10 2021</p>
+					</header>
+					<br />
+					<p>
+						Ro-Express is a Networking module based on express-js. It makes creating Remotes easier while implementing lots of useful
+						features. Its best used for Big and Complex games, when it can be hard to keep track of things. And it works really well with
+						Git and Rojo.
+					</p>
+					<i class="fab fa-github"> <a href="https://github.com/HawDevelopment/Ro-Express">Github</a></i>
+				</article>
+			</section>
+			<!--Plugins-->
+			<h2 id="Plugins">Plugins</h2>
+			<section class="card-list">
+				<!--ReParent-->
+				<article class="card">
+					<header class="header">
+						<h2>ReParent</h2>
+						<p class="card-date">July 30 2021</p>
+					</header>
+					<br />
+					<p>
+						ReParent is a plugin that allows you to set two diffrent parents for an object, helpful for builders and modelers. Made in
+						collaboration with <a href="https://twitter.com/MrChickenRocket/">MrChickenRocket</a>.
+					</p>
+					<i class="fab fa-github"> <a href="https://github.com/HawDevelopment/ReParent">Github</a></i>
+					<a class="roblox" href="https://www.roblox.com/library/7176164814/ReParent">Plugin</a>
+				</article>
+			</section>
+			<!--Contact-->
+			<h2 id="Contact">Contact</h2>
+			<div class="contact">
+				<ul>
+					<li style="--icon-color: invert(35%) sepia(95%) saturate(7470%) hue-rotate(356deg) brightness(91%) contrast(123%)">
+						<a href="https://www.youtube.com/channel/UCoQ1fZu3-bcuqZLVrSYNVWA"><i class="fab fa-youtube"></i></a>
+					</li>
+					<li style="--icon-color: invert(35%) sepia(95%) saturate(7470%) hue-rotate(356deg) brightness(91%) contrast(123%)">
+						<a href="https://www.roblox.com/users/1640376586/profile"
+							><i id="roblox-icon" style="--icon-path: url(/images/RobloxIcon.png)" class="fab roblox"></i
+						></a>
+					</li>
+					<li style="--icon-color: invert(62%) sepia(54%) saturate(6376%) hue-rotate(177deg) brightness(99%) contrast(106%)">
+						<a href="https://www.roblox.com/users/1640376586/profile"
+							><i id="roblox-icon" style="--icon-path: url(/images/RobloxStudio.png)" class="fab studio"></i
+						></a>
+					</li>
+					<li style="--icon-color: invert(61%) sepia(28%) saturate(7496%) hue-rotate(176deg) brightness(97%) contrast(95%)">
+						<a href="https://twitter.com/HawDevelopment"><i class="fab fa-twitter"></i></a>
+					</li>
+					<li style="--icon-color: invert(56%) sepia(53%) saturate(7347%) hue-rotate(360deg) brightness(101%) contrast(108%)">
+						<a href="https://www.reddit.com/user/HawDevelopment"><i class="fab fa-reddit"></i></a>
+					</li>
+					<li
+						style="--icon-color: invert(51%) sepia(30%) saturate(769%) hue-rotate(189deg) brightness(100%) contrast(87%)"
+						id="discord-link"
+					>
+						<a><i class="fab fa-discord"></i></a>
+					</li>
+				</ul>
+			</div>
+		</main>
+	</body>
 </html>
